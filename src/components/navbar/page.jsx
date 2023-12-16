@@ -32,7 +32,7 @@ export default function Navbar(){
                 links.map((link)=>{
                     return(
 
-                        <Link href={link.url} className={styles.link}>{link.title}</Link>
+                        <Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link>
                     )
                 })
             }
