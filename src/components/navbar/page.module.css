@@ -1,9 +1,71 @@
 .container{
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  justify-content: center;
+  gap: 1.5rem;
     background-color: hotpink;
+    position: relative;
 
+
+}
+.logoHolder{
+    width:3rem;
+    height: 4rem;
+    position: relative;
+   margin-right: auto;
+}
+
+.img{
+    position: absolute;
+    widows: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.link{
+    color:#fff;
+    display: none;
+   
+}
+
+
+.mobileNav{
+    position: absolute;
+    right:0px;
+    top:0;
+    background: gray;
+    color:black;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding-top: 3rem;
+    gap:2rem;
+    padding: 10rem 2rem;
+    font-size: 1.8rem;
+    transition:all 1s ease
+
+}
+.hamburger{
+    font-size: 2rem;
+    color:#fff
+}
+.close{
+
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color:white;
+    font-size: 2rem;
+    background: white;
+    color:black
+}
+@media(min-width:760px){
+    .link{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
 }
