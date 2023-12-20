@@ -95,7 +95,7 @@ export default function Home() {
           return(
             
 
-              <CakeList cake={cake}/>
+              <CakeList key={cake.id}cake={cake}/>
               
            
           )

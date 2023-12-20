@@ -7,7 +7,7 @@ export default function CakeList({cake}){
 
         <div  key={cake.id } className={styles.cakes}>
             <div className={styles.imgHolder}>
-                <Image src={cake.img} className={styles.img} fill={true}></Image>
+                <Image src={cake.img} className={styles.img} fill={true} alt="budget cakes"></Image>
             </div>
 
             <p className={styles.name}>{cake.name}</p>
