@@ -65,6 +65,7 @@ export default function Navbar() {
                             <div>
 
                                 {link.title}
+                             
                             </div>
 
 

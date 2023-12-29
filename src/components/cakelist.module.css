@@ -11,10 +11,14 @@
 
 .imgHolder{
     position: relative;
-    width: 10rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
 }
 
+.img{
+    width: 90%;
+    height: 100%;
+}
 .name{
     text-transform: capitalize;
     padding: 1rem 0;
@@ -40,5 +44,17 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-        flex-basis: 33.333%;
+    justify-content: space-between;
+    flex-basis: 25%
+     
+   
+     
 }
+
+@media(min-width:760){
+    .cakes{
+    
+       
+    }
+}
+

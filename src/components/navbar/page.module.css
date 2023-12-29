@@ -34,17 +34,18 @@
     position: absolute;
     right:0px;
     top:0;
-    background: gray;
+    background: white;
     color:black;
-    height: 30vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
     padding-top: 3rem;
     gap:2rem;
     padding: 10rem 2rem;
-    font-size: 1.8rem;
-    transition:all 1s ease
+    font-size: 1rem;
+    transition:all 1s ease;
+    box-shadow: 10px -20px 10px 5px ;
 
 }
 .hamburger{
