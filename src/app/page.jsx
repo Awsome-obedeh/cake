@@ -4,105 +4,147 @@ import { FaMoneyBillWaveAlt } from "react-icons/fa";
 import { FaCakeCandles } from "react-icons/fa6";
 import { TbTruckDelivery } from "react-icons/tb";
 import CakeList from '@/components/cakelist';
+import { FaRegEyeSlash } from "react-icons/fa6"
+import { budgetCakes, christmasCakes, weddingCakes, specialCakes, topCakes } from '../../cakeSections';
 
-const data=[
-  {
-    id:1,
-    img:"https://images.unsplash.com/photo-1553602870-e8a48bd4cd12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    desc:"vanilla Single LAyer Cake -10 Inches",
-    price:9000,
-    name:"budget cakes"
-  },
-  {
-    id:2,
-    img:"https://images.unsplash.com/photo-1553602870-e8a48bd4cd12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    desc:"vanilla Single LAyer Cake -10 Inches",
-    price:9000,
-    name:"budget cakes"
-  },
-  {
-    id:3,
-    img:"https://images.unsplash.com/photo-1553602870-e8a48bd4cd12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    desc:"vanilla Single LAyer Cake -10 Inches",
-    price:9000,
-    name:"budget cakes"
-  },
-  {
-    id:4,
-    img:"https://images.unsplash.com/photo-1553602870-e8a48bd4cd12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    desc:"vanilla Single LAyer Cake -10 Inches",
-    price:9000,
-    name:"budget cakes"
-  },
-  {
-    id:5,
-    img:"https://images.unsplash.com/photo-1553602870-e8a48bd4cd12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    desc:"vanilla Single LAyer Cake -10 Inches",
-    price:9000,
-    name:"budget cakes"
-  },
-  {
-    id:6,
-    img:"https://images.unsplash.com/photo-1553602870-e8a48bd4cd12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    desc:"vanilla Single LAyer Cake -10 Inches",
-    price:9000,
-    name:"budget cakes"
-  },
-]
+
 
 
 export default function Home() {
   return (
-    <div> 
+    <div>
 
-    <div className='container hero'>
+      <div className='container hero'>
         <div className="hero-title">
           <h2>Order  Amazing  cakes<br></br>   from just <br></br>#5000</h2>
           <h4>Get Fast  Shipping , Free <br></br>Delivery a nd free fireworks!!</h4>
         </div>
-    </div>
+      </div>
 
-    <section className="section-two container">
+      <section className="section-two container">
         <div className="money">
-          <FaCakeCandles style={{fontSize:'2.5rem',color:"hotpink"}}/>
+          <FaCakeCandles style={{ fontSize: '2.5rem', color: "hotpink" }} />
           <p className='title'>Affordable Cakes</p>
           <p className="desc">Our cakes are affordable, delicious and excellente </p>
         </div>
         <div className="fireworks">
-          <FaMoneyBillWaveAlt style={{fontSize:'2.5rem',color:"hotpink"}}/>
+          <FaMoneyBillWaveAlt style={{ fontSize: '2.5rem', color: "hotpink" }} />
           <p className='title'>Free Fireworks!</p>
           <p className="desc">Our cakes are affordable, delicious and excellente </p>
         </div>
         <div className="shipping">
-          <TbTruckDelivery style={{fontSize:'2.5rem',color:"hotpink"}}/>
+          <TbTruckDelivery style={{ fontSize: '2.5rem', color: "hotpink" }} />
           <p className='title'>Fastest Free Shipping</p>
           <p className="desc">We deliver even at the shortest notice completely free </p>
         </div>
-    </section>
+      </section>
 
-    {/* cake delivered */}
-    <section className="delivered container">
-      <h1 >20,000</h1>
-      <h3>Successfully Cake Deliveries</h3>
-      <hr className='rule'/>
+      {/* cake delivered */}
+      <section className="delivered container">
+        <h1 >20,000</h1>
+        <h3>Successfully Cake Deliveries</h3>
+        <hr className='rule' />
 
-    </section>
+      </section>
 
-    <section className="budgets container">
-      
-      {
-        data.map((cake)=>{
-          return(
-            
+      <h2 className='section-title'>Our Budgets cakes</h2>
 
-              <CakeList key={cake.id}cake={cake}/>
-              
-           
-          )
-        })
-      }
+      <section className="budgets container">
 
-    </section>
+        {
+          budgetCakes.map((cake) => {
+            return (
+
+
+              <CakeList key={cake.id} cake={cake} />
+
+
+
+            )
+          })
+        }
+      </section>
+        <button className='seemore'> See more </button>
+
+      <hr className="rule" />
+      <h2 className='section-title'>Our Christmas cakes</h2>
+      <section className="budgets container">
+
+        {
+          christmasCakes.map((cake) => {
+            return (
+
+
+              <CakeList key={cake.id} cake={cake} />
+
+
+
+            )
+          })
+        }
+
+      </section>
+
+
+      <hr className="rule" />
+      <h2 className='section-title'>Our Wedding cakes</h2>
+      <section className="budgets container">
+
+        {
+          weddingCakes.map((cake) => {
+            return (
+
+
+              <CakeList key={cake.id} cake={cake} />
+
+
+
+            )
+          })
+        }
+
+      </section>
+
+      <hr className="rule" />
+      <h2 className='section-title'>Our Special cakes</h2>
+      <section className="budgets container">
+
+        {
+          specialCakes.map((cake) => {
+            return (
+
+
+              <CakeList key={cake.id} cake={cake} />
+
+
+
+            )
+          })
+        }
+
+      </section>
+      <button className='seemore'> See more </button>
+
+
+      <hr className="rule" />
+      <h2 className='section-title'>Our Picks For you</h2>
+      <section className="budgets container">
+
+        {
+          topCakes.map((cake) => {
+            return (
+
+
+              <CakeList key={cake.id} cake={cake} />
+
+
+
+            )
+          })
+        }
+
+      </section>
+      <button className='seemore'> See more </button>
     </div>
-    )
-  }
+  )
+}
