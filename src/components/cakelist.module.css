@@ -7,12 +7,19 @@
     text-transform: uppercase;
     border: none;
     margin: 1.5rem 0;
+    transform: all 3s ease-in;
 }
-
+.btn:hover{
+    transform: translateY(-5px);
+}
 .imgHolder{
     position: relative;
     width: 20rem;
     height: 20rem;
+    transition: all 1.2s ease ;
+}
+.imgHolder:hover{
+    transform: scale(1.1);
 }
 .viewCon{
     position: absolute;
@@ -20,11 +27,12 @@
     text-align: center;
     background-color: rgba(100, 98, 98, 0.749);
     padding: .4rem 0;
-    width: 100%;
+    width: 100%;cursor: pointer;
 }
 .view{
     color: white;
     text-transform: capitalize;
+    
     
 
 }

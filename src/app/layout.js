@@ -1,8 +1,13 @@
+
+
 import { Inter } from 'next/font/google'
 import { Manrope } from 'next/font/google'
+
+import Aos from '@/components/Aos'
 import './globals.css'
 import Navbar from '../components/navbar/page'
 import Footer from '@/components/footer/page'
+
 
 const inter = Inter({ subsets: ['latin'] })
 const manrope = Manrope({ subsets: ['latin'] })
@@ -13,10 +18,13 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+ 
+
   return (
     <html lang="en">
       <body className={manrope.className}>
-        
+        <Aos/>
         
       <Navbar/>
         {children}

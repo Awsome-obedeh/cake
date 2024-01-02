@@ -7,7 +7,7 @@ export default function CakeList({cake}){
        
 
         <div  key={cake.id } className={styles.cakes}>
-            <div className={styles.imgHolder}>
+            <div className={styles.imgHolder} data-aos="zoom-in-down">
                 <Image src={cake.img} className={styles.img} fill={true} alt="budget cakes"></Image> 
                 <div className={styles.viewCon}>
 
@@ -18,7 +18,7 @@ export default function CakeList({cake}){
             <p className={styles.name}>{cake.name}</p>
             <h5 className={styles.desc}>{cake.desc}</h5>
             <p className={styles.price}>{cake.price}</p>
-            <button className={styles.btn}>Buy now </button>
+            <button className={styles.btn} data-aos="fade-up">Buy now </button>
            
         </div>
        

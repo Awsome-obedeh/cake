@@ -6,6 +6,7 @@ import Image from "next/image";
 import { CiBoxList } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+import { IoIosCart } from "react-icons/io";
 const links = [
 
     {
@@ -74,6 +75,7 @@ export default function Navbar() {
                     )
                 })
             }
+            <IoIosCart style={{color:"white", fontSize:"1.5rem"}}/>
 
 
            

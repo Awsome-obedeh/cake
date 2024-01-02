@@ -145,6 +145,10 @@ export default function Home() {
 
       </section>
       <button className='seemore'> See more </button>
+
+      <section>
+        <h2>What Others Are Saying About Us</h2>
+      </section>
     </div>
   )
 }
