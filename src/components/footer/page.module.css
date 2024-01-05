@@ -1,0 +1,26 @@
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    color:#ef56ad;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.links{
+    display: block;
+    padding: .5rem 0;
+
+}
+
+.locations p{
+    padding-bottom: .5rem;
+}
+
+.socials{
+    text-align: center;
+  
+
+}
