@@ -153,9 +153,9 @@ export default function Home() {
 
       <section className='orderSection'>
         <h2>Ready to Get your Cake?</h2>
-        <p>Excellent! Let's lock in your decision and unlock the potential</p>
+        <p>Excellent! Let us lock in your decision and unlock the potential</p>
         
-        <button className="orderBtn">Let's get you Your Cake</button>
+        <button className="orderBtn">Let us get you Your Cake</button>
         
         
       </section>
