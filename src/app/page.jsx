@@ -8,7 +8,7 @@ import { FaRegEyeSlash } from "react-icons/fa6"
 import { budgetCakes, christmasCakes, weddingCakes, specialCakes, topCakes } from '../../cakeSections';
 import HorizontalRule from '@/components/rule';
 import Review from '@/components/Review';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 
 
@@ -155,7 +155,7 @@ export default function Home() {
         <h2>Ready to Get your Cake?</h2>
         <p>Excellent! Let's lock in your decision and unlock the potential</p>
         
-        <button className="orderBtn"><Link href="/store">Let's get you Your Cake</Link></button>
+        <button className="orderBtn">Let's get you Your Cake</button>
         
         
       </section>
