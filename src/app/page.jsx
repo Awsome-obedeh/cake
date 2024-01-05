@@ -154,10 +154,10 @@ export default function Home() {
       <section className='orderSection'>
         <h2>Ready to Get your Cake?</h2>
         <p>Excellent! Let's lock in your decision and unlock the potential</p>
-        <Link href="/store">
-        <button className="orderBtn">Let's get you Your Cake</button>
         
-        </Link>
+        <button className="orderBtn"><Link href="/store">Let's get you Your Cake</Link></button>
+        
+        
       </section>
     </div>
   )
