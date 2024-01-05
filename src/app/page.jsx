@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { FaMoneyBillWaveAlt } from "react-icons/fa";
-import { FaCakeCandles } from "react-icons/fa6";
+import { FaCakeCandles,FaStar } from "react-icons/fa6";
 import { TbTruckDelivery } from "react-icons/tb";
 import CakeList from '@/components/cakelist';
 import { FaRegEyeSlash } from "react-icons/fa6"
 import { budgetCakes, christmasCakes, weddingCakes, specialCakes, topCakes } from '../../cakeSections';
+import HorizontalRule from '@/components/rule';
+import Review from '@/components/Review';
 
 
 
@@ -43,7 +45,7 @@ export default function Home() {
       <section className="delivered container">
         <h1 >20,000</h1>
         <h3>Successfully Cake Deliveries</h3>
-        <hr className='rule' />
+        <HorizontalRule/>
 
       </section>
 
@@ -66,7 +68,7 @@ export default function Home() {
       </section>
         <button className='seemore'> See more </button>
 
-      <hr className="rule" />
+      <HorizontalRule/>
       <h2 className='section-title'>Our Christmas cakes</h2>
       <section className="budgets container">
 
@@ -86,7 +88,7 @@ export default function Home() {
       </section>
 
 
-      <hr className="rule" />
+      <HorizontalRule/>
       <h2 className='section-title'>Our Wedding cakes</h2>
       <section className="budgets container">
 
@@ -105,7 +107,7 @@ export default function Home() {
 
       </section>
 
-      <hr className="rule" />
+      <HorizontalRule/>
       <h2 className='section-title'>Our Special cakes</h2>
       <section className="budgets container">
 
@@ -126,7 +128,7 @@ export default function Home() {
       <button className='seemore'> See more </button>
 
 
-      <hr className="rule" />
+     <HorizontalRule/>
       <h2 className='section-title'>Our Picks For you</h2>
       <section className="budgets container">
 
@@ -145,9 +147,13 @@ export default function Home() {
 
       </section>
       <button className='seemore'> See more </button>
+      <h2 style={{textAlign:"center"}}>What Others are Saying About us</h2>
+      <Review />
 
-      <section>
-        <h2>What Others Are Saying About Us</h2>
+      <section className='orderSection'>
+        <h2>Ready to Get your Cake?</h2>
+        <p>Excellent! Let's lock in your decision and unlock the potential</p>
+        <button className="orderBtn">Let's get you Your Cake</button>
       </section>
     </div>
   )

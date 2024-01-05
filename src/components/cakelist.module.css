@@ -3,7 +3,7 @@
     text-align: center;
     color: #fff;
     border-radius: 10px;
-    background: red;
+    background: #ef56ad;
     text-transform: uppercase;
     border: none;
     margin: 1.5rem 0;
@@ -24,10 +24,16 @@
 .viewCon{
     position: absolute;
     bottom: 5px;
+
     text-align: center;
     background-color: rgba(100, 98, 98, 0.749);
     padding: .4rem 0;
     width: 100%;cursor: pointer;
+    display:none;
+    transition:all 2s ease-in-out !important;
+}
+.imgHolder:hover> .viewCon {
+    display: block;
 }
 .view{
     color: white;
